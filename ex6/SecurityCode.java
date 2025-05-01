@@ -1,4 +1,4 @@
-package Exp6;  // Changed from Exp-6 to Exp6 (no hyphens allowed in package names)
+package ex6;  // Changed from Exp-6 to Exp6 (no hyphens allowed in package names)
 
 // Final class that cannot be inherited
 final class SecuritySystem {
@@ -22,7 +22,7 @@ class AdvancedSecurity extends SecuritySystem {
 }
 */
 
-public class Main {
+public class SecurityCode {
     public static void main(String[] args) {
         // Create an instance of SecuritySystem
         SecuritySystem securitySystem = new SecuritySystem();

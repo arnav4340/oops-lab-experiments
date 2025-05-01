@@ -1,4 +1,4 @@
-package ECommerce;
+package ex6.ecommerce;
 
 public class Product {
     public void getProductDetails() {
@@ -16,16 +16,4 @@ public class Product {
     private void calculateProfit() {
         System.out.println("Profit calculated.");
     }
-}
-
-package studentrecords;
-
-import ECommerce.Product;
-
-public class CustomerCart {
-    public static void main(String[] args) {
-        Product product = new Product();
-        product.getProductDetails();
-
-}
 }

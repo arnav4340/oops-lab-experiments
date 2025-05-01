@@ -1,7 +1,7 @@
-package studentrecords;
+package ex6;
 
-import studentrecords.Invoice;
-import studentrecords.TaxCalculator;
+import ex6.Invoice;
+import ex6.TaxCalculator;
 
 class TaxCalculator {
     final double GST_RATE = 18.0;
@@ -17,7 +17,7 @@ class Invoice extends TaxCalculator {
     }
 }
 
-public class Program1 {
+public class TaxCode {
     public static void main(String[] args) {
         Invoice invoice = new Invoice();
         double amount = 1000.0;

@@ -1,4 +1,4 @@
-package studentrecords;
+package ex6.studentrecords;
 
 public class Student{
     private String studentID;
@@ -17,4 +17,9 @@ public class Student{
         System.out.println("Grade: "+grade);
     }
 
-};
+    public static void main(String[] args) {
+        Student student = new Student("1234", "Arnav", "O");
+
+        student.displayStudentInfo();
+    }
+}
