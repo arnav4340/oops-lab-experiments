@@ -13,13 +13,13 @@ class Person implements Serializable {
 public class PersonSerialization {
     public static void main(String[] args) {
         try {
-            // Serialize
+            
             Person person = new Person("Arnav", 19);
             ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream("person.txt"));
             out.writeObject(person);
             out.close();
             
-            // Deserialize
+            
             ObjectInputStream in = new ObjectInputStream(new FileInputStream("person.txt"));
             Person p = (Person) in.readObject();
             in.close();

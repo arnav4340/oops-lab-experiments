@@ -17,7 +17,7 @@ public class RegistrationForm extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new GridLayout(6, 2));
 
-        // Create components
+        
         JLabel nameLabel = new JLabel("Name:");
         nameField = new JTextField();
         
@@ -33,7 +33,7 @@ public class RegistrationForm extends JFrame {
         registerButton = new JButton("Register");
         messageLabel = new JLabel("");
 
-        // Add components to the frame
+        
         add(nameLabel);
         add(nameField);
         add(emailLabel);
@@ -45,7 +45,7 @@ public class RegistrationForm extends JFrame {
         add(registerButton);
         add(messageLabel);
 
-        // Register button action
+        
         registerButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -62,11 +62,11 @@ public class RegistrationForm extends JFrame {
         String password = new String(passwordField.getPassword());
         String confirmPassword = new String(confirmPasswordField.getPassword());
 
-        // Clear previous messages
+        
         messageLabel.setText("");
         messageLabel.setForeground(Color.RED);
 
-        // Validation checks
+        
         if (name.isEmpty()) {
             messageLabel.setText("Name cannot be empty.");
             return;
@@ -84,7 +84,7 @@ public class RegistrationForm extends JFrame {
             return;
         }
 
-        // If all validations pass
+        
         messageLabel.setForeground(Color.GREEN);
         messageLabel.setText("Registration successful!");
     }

@@ -17,7 +17,7 @@ public class StudentInfoWriter{
         
         String studentData = "Name: " + name + ", Roll Number: " + rollNumber + ", Grade: " + grade + "\n";
         
-        try(FileWriter writer = new FileWriter("student.txt", true)){ // true enables appending mode
+        try(FileWriter writer = new FileWriter("student.txt", true)){ 
             writer.write(studentData);
             System.out.println("Student information saved successfully.");
         } catch(IOException e){

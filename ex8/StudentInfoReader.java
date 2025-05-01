@@ -4,7 +4,7 @@ import java.io.IOException;
 
 public class StudentInfoReader {
     public static void main(String[] args) {
-        // Try with resources to automatically close the FileReader
+        
         try (FileReader reader = new FileReader("student.txt")) {
             int character;
             while ((character = reader.read()) != -1) {

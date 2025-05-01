@@ -12,7 +12,7 @@ class Employee {
         this.salary = salary;
     }
 
-    // Getters and setters
+    
     public String getName() {
         return name;
     }
@@ -37,10 +37,10 @@ class Employee {
 
 public class EmployeeManagement {
     public static void main(String[] args) {
-        // Create ArrayList to store employees
+        
         ArrayList<Employee> employees = new ArrayList<>();
 
-        // Add three employees
+        
         employees.add(new Employee("John Doe", 101, 50000.0));
         employees.add(new Employee("Jane Smith", 102, 60000.0));
         employees.add(new Employee("Bob Johnson", 103, 55000.0));
@@ -48,7 +48,7 @@ public class EmployeeManagement {
         System.out.println("Initial Employee List:");
         printEmployees(employees);
 
-        // Update Jane's salary (ID 102)
+        
         for (Employee emp : employees) {
             if (emp.getId() == 102) {
                 emp.setSalary(65000.0);
@@ -57,7 +57,7 @@ public class EmployeeManagement {
             }
         }
 
-        // Remove employee with ID 101 (John Doe)
+        
         Iterator<Employee> iterator = employees.iterator();
         while (iterator.hasNext()) {
             Employee emp = iterator.next();
@@ -72,7 +72,7 @@ public class EmployeeManagement {
         printEmployees(employees);
     }
 
-    // Helper method to print all employees
+    
     private static void printEmployees(ArrayList<Employee> employees) {
         if (employees.isEmpty()) {
             System.out.println("No employees in the list.");

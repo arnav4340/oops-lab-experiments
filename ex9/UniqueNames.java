@@ -20,7 +20,7 @@ public class UniqueNames {
             System.out.println(nameToCheck + " does not exist in the set.");
         }
         
-        // Print all unique names
+        
         System.out.println("\nUnique names:");
         for (String name : uniqueNames) {
             System.out.println(name);
